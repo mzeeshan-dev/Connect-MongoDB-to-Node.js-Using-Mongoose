@@ -29,13 +29,17 @@ const userlistSchema = new mongoose.Schema({
 
 const Userlist = new mongoose.model("Userlist", userlistSchema); // => Collection Creation
 
-// Create / Insert Document
+// Create / Insert Document Using Aysnc Await
 
-const hamzaList = new Userlist({
-  name: "Muhammad Hamza",
-  username: "BC180500443",
-  age: 23,
-  active: true,
-});
+const createDocument = async () => {
+  const hamzaList = new Userlist({
+    name: "Muhammad Hamza",
+    username: "BC180500443",
+    age: 23,
+    active: true,
+  });
 
-hamzaList.save();
+  const result = await hamzaList.save();
+};
+
+createDocument();
