@@ -1,0 +1,23 @@
+{
+  "name": "Connect-MongoDB-to-Node.js-Using-Mongoose",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RegalCoderz/Connect-MongoDB-to-Node.js-Using-Mongoose.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RegalCoderz/Connect-MongoDB-to-Node.js-Using-Mongoose/issues"
+  },
+  "homepage": "https://github.com/RegalCoderz/Connect-MongoDB-to-Node.js-Using-Mongoose#readme",
+  "dependencies": {
+    "mongoose": "^6.0.8"
+  }
+}
