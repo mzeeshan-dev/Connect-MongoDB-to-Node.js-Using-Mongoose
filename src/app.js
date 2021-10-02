@@ -28,3 +28,14 @@ const userlistSchema = new mongoose.Schema({
 // Model
 
 const Userlist = new mongoose.model("Userlist", userlistSchema); // => Collection Creation
+
+// Create / Insert Document
+
+const hamzaList = new Userlist({
+  name: "Muhammad Hamza",
+  username: "BC180500443",
+  age: 23,
+  active: true,
+});
+
+hamzaList.save();
