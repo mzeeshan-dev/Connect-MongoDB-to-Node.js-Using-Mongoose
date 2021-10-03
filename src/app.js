@@ -29,17 +29,20 @@ const userlistSchema = new mongoose.Schema({
 
 const Userlist = new mongoose.model("Userlist", userlistSchema); // => Collection Creation
 
-// Create / Insert Document Using Aysnc Await
+// Create / Insert Document Using Aysnc Await with try catch
 
 const createDocument = async () => {
-  const hamzaList = new Userlist({
-    name: "Muhammad Hamza",
-    username: "BC180500443",
-    age: 23,
-    active: true,
-  });
-
-  const result = await hamzaList.save();
+  try {
+    const hamzaList = new Userlist({
+      name: "Muhammad Arslan",
+      username: "BC180400443",
+      age: 18,
+      active: false,
+    });
+    const result = await hamzaList.save();
+  } catch (err) {
+    console.log(err);
+  }
 };
 
 createDocument();
